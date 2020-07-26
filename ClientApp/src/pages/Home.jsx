@@ -1,27 +1,21 @@
 import React, { useRef, useState, useEffect } from 'react'
-import ReactMapboxGl from 'react-mapbox-gl'
-import mapboxgl from 'mapbox-gl'
-
+import ReactMapboxGl, { Marker } from 'react-mapbox-gl'
 
 
 export function Home() {
 
   const mapContainer = useRef(null);
+  const json = require("./test.json")
 
   const [ lng, setLng ] = useState(5)
   const [ lat, setLat ] = useState(34)
   const [ zoom, setZoom ] = useState(1.5)
 
+  console.log(json)
+
   const Map = ReactMapboxGl({
     accessToken: 'pk.eyJ1IjoiYWtzbmVsbCIsImEiOiJja2QyNWIxaGwwMHF5MnNtb2hlM3kzODc5In0._iaqzpg_V-an3ngDTSWfmQ'
   })
-
-  // useEffect(() => {
-  //   const mapBox = new mapboxgl.Map({
-  //     container: mapContainer.current,
-  //     style: 'mapbox://styles/aksnell/ckd27ujkt1un91iqouslqh4sk',
-  //   })
-  // })
 
   return (
     <Map
