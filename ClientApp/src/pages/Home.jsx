@@ -38,6 +38,7 @@ const mapStyle = {
   position:" absolute"
 }
 
+const API_KEY = process.env.REACT_APP_MAPBOX_KEY
 
 export function Home() {
   const [ map, setMap ] = useState(null)
@@ -46,7 +47,7 @@ export function Home() {
 
   // Map initialiization
   useEffect(() => {
-    mapboxgl.accessToken =  'pk.eyJ1IjoiYWtzbmVsbCIsImEiOiJja2Q2MzcxYmgwdjNkMzFvZGhqdmxrYmpvIn0.-c3cS4I9ZS4TVtCltd5Q8Q'
+    mapboxgl.accessToken = API_KEY
     const initializeMap = ({ setMap, mapContainer}) => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
