@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react'
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import React from 'react'
+import { Map } from '../components/MapBox'
+
 
 // const json = require("./test.json")
 
@@ -32,43 +32,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 // const shelterGeoJson = convert(json)
 
-const mapStyle = {
-  width: "100vw",
-  height: "100vh",
-  position:" absolute"
-}
-
-const API_KEY = process.env.REACT_APP_MAPBOX_KEY
-
 export function Home() {
-  const [ map, setMap ] = useState(null)
-  const mapContainer = useRef(null)
-
-
-  // Map initialiization
-  useEffect(() => {
-    mapboxgl.accessToken = API_KEY
-    const initializeMap = ({ setMap, mapContainer}) => {
-      const map = new mapboxgl.Map({
-        container: mapContainer.current,
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-82.460258, 27.963515],
-        zoom: 16,
-        bearing: -20.00,
-        pitch: 52.50
-      })
-
-      map.on("load", () => {
-        setMap(map)
-        map.resize()
-      })
-    }
-
-    if (!map) initializeMap({ setMap, mapContainer })
-
-  }, [map])
-
   return (
-    <div ref={el => (mapContainer.current = el)} style={mapStyle}/>
+    <Map/>
   )
 }
