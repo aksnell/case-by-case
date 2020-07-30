@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import mapboxgl, { PositionOptions } from 'mapbox-gl'
-import './style.scss'
 import 'mapbox-gl/dist/mapbox-gl.css'
-
+import './style.scss'
 const API_KEY = process.env.REACT_APP_MAPBOX_KEY
 
 // Convert THI/Unity JSON format to GeoJSON specification.
@@ -86,6 +85,9 @@ const mapStyle = {
   position: 'absolute',
 }
 
+//TODO: Solve filtering by population
+//TODO: Change icon type based on service
+//TODO: Store json in backend
 export function Map() {
   const [map, setMap] = useState(null)
   const [shelters, setShelters] = useState(require('./geotest.json'))
@@ -99,7 +101,7 @@ export function Map() {
       // Create map with custom styling, centered on Metropolitan Ministries.
       const map = new mapboxgl.Map({
         container: mapContainer.current,
-        style: 'mapbox://styles/aksnell/ckd27ujkt1un91iqouslqh4sk',
+        style: 'mapbox://styles/aksnell/ckd88j2c70acd1ildqpwg7tra',
         center: [-82.460258, 27.963515],
         zoom: 18,
         bearing: -20.0,
@@ -155,7 +157,38 @@ export function Map() {
                   'text-offset': [0, 1.25],
                   'text-anchor': 'top',
                 },
+                paint: {
+                  'text-color': 'white'
+                },
                 filter: ['==', service, true],
+              })
+
+              map.on('click', service, shelter => {
+                const props = shelter.features[0].properties
+                const coords = shelter.features[0].geometry.coordinates.slice()
+        
+                while (Math.abs(shelter.lngLat.lng - coords[0]) > 180) {
+                  coords[0] += shelter.lngLat.lng > coords[0] ? 360 : -360
+                }
+        
+                new mapboxgl.Popup()
+                  .setLngLat(coords)
+                  .setHTML(
+                    `
+                    <article class="shelter-popup">
+                    <strong>${props.title.split('\n')[1]}</strong>
+                    <p>${props.description}</p>
+                    <strong>Populations</strong>
+                    <ul>
+                    ${props.populations
+                      .split(',')
+                      .map(pop => (pop !== '' ? '<li>' + pop + '</li>' : ''))
+                      .join('')}
+                    </ul>
+                    </article>
+                  `
+                  )
+                  .addTo(map)
               })
 
               const input = document.createElement('input')
@@ -183,33 +216,7 @@ export function Map() {
         map.resize()
       })
 
-      map.on('click', 'shelters', shelter => {
-        const props = shelter.features[0].properties
-        const coords = shelter.features[0].geometry.coordinates.slice()
-
-        while (Math.abs(shelter.lngLat.lng - coords[0]) > 180) {
-          coords[0] += shelter.lngLat.lng > coords[0] ? 360 : -360
-        }
-
-        new mapboxgl.Popup()
-          .setLngLat(coords)
-          .setHTML(
-            `
-            <article class="shelter-popup">
-            <strong>${props.title.split('\n')[1]}</strong>
-            <p>${props.description}</p>
-            <strong>Populations</strong>
-            <ul>
-            ${props.populations
-              .split(',')
-              .map(pop => (pop !== '' ? '<li>' + pop + '</li>' : ''))
-              .join('')}
-            </ul>
-            </article>
-          `
-          )
-          .addTo(map)
-      })
+      
 
       map.on('mouseenter', 'shelters', () => {
         map.getCanvas().style.cursor = 'pointer'
