@@ -6,65 +6,69 @@ const API_KEY = process.env.REACT_APP_MAPBOX_KEY
 
 // Convert THI/Unity JSON format to GeoJSON specification.
 const convertGeoJson = () => {
-
   const rawJson = require('./test.json')
   const mapboxClient = require('@mapbox/mapbox-sdk/services/geocoding')
   const geocodeClient = mapboxClient({ accessToken: API_KEY })
 
   const result = {
-    features: Array(rawJson.length)
+    features: Array(rawJson.length),
+  }
+
+  const acceptsMen = /\'male|\'men/g
+  const acceptsWomen = /\'wome|\'fem/g
+  const acceptsChildren = /\'child/g
+  const acceptsPregnant = /\'mater|\'preg/g
+  const acceptsFamilies = /\'famili/g
+  const acceptsVeterans = /\'vet/g
+
+  // TODO: Refactor to produce entire population string at once.
+  const verifyPopulation = (popRegex, tsv_string) => {
+    return tsv_string.search(popRegex) != -1
   }
 
   for (let shelter of rawJson) {
-    geocodeClient.forwardGeocode({
-      query: `${shelter['address1']}, ${shelter['city']}`,
-      limit: 1
-    })
-    .send()
-    .then(response => {
-      const match = response.body
-      result.features.push({
-        type: "Feature",
-        geometry: {
-          coordinates: match.features[0].center,
-          type: 'Point'
-        },
-        properties: {
-          title: shelter['name'].match('[A-z -]+')[0].replaceAll('-', '\n'),
-          description: shelter['description'],
-          address: `${shelter['address1']}${(shelter['address2'] != '') ? ' ' + shelter['address2'] : ''}, ${shelter['city']}, FL ${shelter['zipcode']}`,
-          city: shelter['city'],
-          zipcode: shelter['zipcode'],
-          url: shelter['url'],
-          phone: shelter['phone'],
-          date_modified: shelter['date_modified'],
-          populations: {
-            handicap: shelter['handicap_access'],
-            men: shelter['tsv_default'].search(`'male|\'men`) != -1,
-            women: shelter['tsv_default'].search(`'women|'fem`) != -1,
-            children: shelter['tsv_default'].search(`'child`) != -1,
-            family: shelter['tsv_default'].search(`'famili`) != -1,
-            veteran: shelter['tsv_default'].search(`'vet`) != -1,
-            pregnant: shelter['tsv_default'].search(`'preg|'matern`) != -1
-          },
-          services: {
-            job: shelter['tsv_default'].search(`'job`) != -1,
-            domestic: shelter['tsv_default'].search(`domest`) != -1,
-            substance: shelter['tsv_default'].search(`substa`) != -1,
-            transportation: shelter['tsv_default'].search(`transp`) != -1,
-            emergency: shelter['service_string'].search(`Emerge`) != -1,
-            transitional: shelter['service_string'].search(`Transit`) != -1
-          },
-          availability: {
-            total: shelter['unitListInfo'][0]['total'],
-            available: shelter['unitListInfo'][0]['available'],
-          }
-        }
+    
+    const populations = shelter['tsv_default']
+
+    geocodeClient
+      .forwardGeocode({
+        query: `${shelter['address1']}, ${shelter['city']}`,
+        limit: 1,
       })
-    })
+      .send()
+      .then(response => {
+        const match = response.body
+        result.features.push({
+          type: 'Feature',
+          geometry: {
+            coordinates: match.features[0].center,
+            type: 'Point',
+          },
+          properties: {
+            title: shelter['name'].match('[A-z -]+')[0].replaceAll('-', '\n'),
+            description: shelter['description'],
+            address: `${shelter['address1']}${
+              shelter['address2'] != '' ? ' ' + shelter['address2'] : ''
+            }, ${shelter['city']}, FL ${shelter['zipcode']}`,
+            city: shelter['city'],
+            zipcode: shelter['zipcode'],
+            url: shelter['url'],
+            phone: shelter['phone'],
+            date_modified: shelter['date_modified'],
+            populations: `${(shelter['handicap_access']) ? 'handicap,' : ''}${(verifyPopulation(acceptsMen, populations)) ? 'men,' : ''}${(verifyPopulation(acceptsWomen, populations)) ? 'women,' : ''}${(verifyPopulation(acceptsChildren, populations)) ? 'youth,' : ''}${(verifyPopulation(acceptsFamilies, populations)) ? 'family,' : ''}${(verifyPopulation(acceptsVeterans, populations)) ? 'veterans,' : ''}${(verifyPopulation(acceptsPregnant, populations)) ? 'pregnant' : ''}`,
+            emergency: shelter['service_string'].search(/Emerg/g) != -1,
+            transitional: shelter['service_string'].search(/Trans/g) != -1,
+            substance: shelter['tsv_default'].search(/substa/g) != -1,
+            total_beds: shelter['unitListInfo'][0]['total'],
+            available_beds: shelter['unitListInfo'][0]['available']
+          }
+        })
+      })
   }
   console.log(result)
 }
+
+//convertGeoJson()
 
 const mapStyle = {
   width: "100vw",
@@ -72,11 +76,9 @@ const mapStyle = {
   position:" absolute"
 }
 
-
-convertGeoJson()
-
 export function Map() {
   const [ map, setMap ] = useState(null)
+  const [ shelters, setShelters ] = useState(require('./geotest.json'))
   const mapContainer = useRef(null)
 
   // Map initialization
@@ -105,9 +107,69 @@ export function Map() {
       )
 
       map.on("load", () => {
+        
+        // Add transformed shelter geojson data
+        map.addSource(
+          "geojson-shelters", {
+            "type": "geojson",
+            "data": shelters
+          }
+        )
+
+        // Draw geojson data
+        map.addLayer({
+          'id': 'shelters',
+          'type': 'symbol',
+          'source': 'geojson-shelters',
+          'layout': {
+            'icon-image': ['image', 'lodging-15'],
+            'icon-allow-overlap': true,
+            'text-field': ['get', 'title'],
+            'text-font': [
+              'Open Sans Semibold',
+              'Arial Unicode MS Bold'
+            ],
+            'text-size': 10,
+            'text-offset': [0, 1.25],
+            'text-anchor': 'top'
+          }
+        })
+
         setMap(map)
         map.resize()
       })
+
+      map.on('click', 'shelters', (shelter) => {
+        const props = shelter.features[0].properties
+        const coords = shelter.features[0].geometry.coordinates.slice()
+
+        while (Math.abs(shelter.lngLat.lng - coords[0]) > 180) {
+          coords[0] += shelter.lngLat.lng > coords[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coords)
+          .setHTML(`
+            <article class="shelter-popup">
+            <strong>${props.title.split('\n')[1]}</strong>
+            <p>${props.description}</p>
+            <strong>Populations</strong>
+            <ul>
+            ${props.populations.split(',').map(pop => (pop !== '') ? '<li>' + pop + '</li>' : '').join('')}
+            </ul>
+            </article>
+          `)
+          .addTo(map)
+      })
+
+      map.on('mouseenter', 'shelters', () => {
+        map.getCanvas().style.cursor = 'pointer'
+      })
+
+      map.on('mouseleave', 'shelters', () => {
+        map.getCanvas().style.cursor = ''
+      })
+
     }
 
     if (!map) initializeMap({ setMap, mapContainer })

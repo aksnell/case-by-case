@@ -2,1111 +2,706 @@
     "type": "FeatureCollection",
     "features": [
       {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.518263,
-            27.982145
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "ACTS \n Drew Park ",
-          "description": "Treatment services are individualized, with different types and intensities of treatment approaches, according to the specific needs, strengths, abilities, and preferences of the person served.  Group and individual therapy sessions are provided throughout the treatment stay.  Educational groups are provided daily to address health and safety, recreation, living skills, finances, relationships, family systems, decision-making skills, nutrition, etc.  Random urine screenings are conducted.  Comprehensive case management services are provided while in treatment.  Transportation services are made available.  Room, board and supervision are provided.  Employment readiness services are provided.  All persons served will be introduced to the 12 step program and philosophy model.",
-          "address": "4403 W. Martin Luther King Jr. Blvd, Tampa, FL 33614",
-          "city": "Tampa",
-          "zipcode": "33614",
-          "url": "www.actsfl.org",
-          "phone": "8138791649",
-          "date_modified": "2020-03-13 11:45:17",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.458817,
+                28.042012
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Catholic Charities \n Mercy House ",
+              "description": "Transitional Supportive Housing Assistance for women who are HIV positive with/without children.",
+              "address": "10049 N Florida Ave, Tampa, FL 33612",
+              "city": "Tampa",
+              "zipcode": "33612",
+              "url": "www.catholiccharitiesfl.org",
+              "phone": "7278931313",
+              "date_modified": "2019-10-24 12:18:42",
+              "populations": "handicap accessible,women,youth,",
+              "emergency": false,
+              "transitional": true,
+              "substance": false,
+              "total_beds": 16,
+              "available_beds": 8
+            }
           },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": true,
-            "emergency": true,
-            "transitional": false
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.45182,
+                28.010224
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "ACTS \n Emergency Bridge Shelter",
+              "description": "ACTS Bridge Housing is a 90 day 30 bed facility for homeless co-occuring male and female clients with case management and group service on site.  Also offers 8 single units for families; off site with case management.",
+              "address": "6806 N. Nebraska Ave, Tampa, FL 33604",
+              "city": "Tampa",
+              "zipcode": "33604",
+              "url": "www.actsfl.org",
+              "phone": "8132374907",
+              "date_modified": "2020-05-15 06:15:42",
+              "populations": "handicap accessible,men,women,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 23,
+              "available_beds": 3
+            }
           },
-          "availability": {
-            "total": 30,
-            "available": 14
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.518263,
+                27.982145
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "ACTS \n Drew Park ",
+              "description": "Treatment services are individualized, with different types and intensities of treatment approaches, according to the specific needs, strengths, abilities, and preferences of the person served.  Group and individual therapy sessions are provided throughout the treatment stay.  Educational groups are provided daily to address health and safety, recreation, living skills, finances, relationships, family systems, decision-making skills, nutrition, etc.  Random urine screenings are conducted.  Comprehensive case management services are provided while in treatment.  Transportation services are made available.  Room, board and supervision are provided.  Employment readiness services are provided.  All persons served will be introduced to the 12 step program and philosophy model.",
+              "address": "4403 W. Martin Luther King Jr. Blvd, Tampa, FL 33614",
+              "city": "Tampa",
+              "zipcode": "33614",
+              "url": "www.actsfl.org",
+              "phone": "8138791649",
+              "date_modified": "2020-03-13 11:45:17",
+              "populations": "handicap accessible,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 30,
+              "available_beds": 14
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.408544,
+                27.968078
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "DACCO \n Columbus Transitional Housing ",
+              "description": "Womens Residential Program - In Patient",
+              "address": "4422 E Columbus Drive, Tampa, FL 33605",
+              "city": "Tampa",
+              "zipcode": "33605",
+              "url": "www.dacco.org",
+              "phone": "8133844001",
+              "date_modified": "2019-10-24 12:19:05",
+              "populations": "handicap accessible,women,",
+              "emergency": false,
+              "transitional": true,
+              "substance": false,
+              "total_beds": 22,
+              "available_beds": 22
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.486376,
+                27.943069
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Dawning Family Services \n ES \n COVID\n",
+              "description": "5 Motel/Hotel Vouchers being used as part of the response to the COVID-19 Pandemic",
+              "address": "201 S. Tampania Ave., Tampa, FL 33609",
+              "city": "Tampa",
+              "zipcode": "33609",
+              "url": "www.alphahouseoftampa.org",
+              "phone": "8138752024",
+              "date_modified": "2020-05-29 08:42:04",
+              "populations": "handicap accessible,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 5,
+              "available_beds": 4
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.486376,
+                27.943069
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Dawning Family Services \n ES ",
+              "description": "The maternity residence provides a 21 bed residential program for adult pregnant women.  The program provides life skills training, counseling, case management, parenting, vocational assistance, and education.",
+              "address": "201 S. Tampania Ave., Tampa, FL 33609",
+              "city": "Tampa",
+              "zipcode": "33609",
+              "url": "www.alphahouseoftampa.org",
+              "phone": "8138752024",
+              "date_modified": "2020-03-13 12:43:17",
+              "populations": "handicap accessible,women,family,pregnant",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 21,
+              "available_beds": 13
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.486376,
+                27.943069
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Dawning Family Services \n ES \n City of Tampa COVID\n",
+              "description": "5 Motel/Hotel Vouchers being used as part of the response to the COVID-19 Pandemic",
+              "address": "201 S. Tampania Ave., Tampa, FL 33609",
+              "city": "Tampa",
+              "zipcode": "33609",
+              "url": "www.alphahouseoftampa.org",
+              "phone": "8138752024",
+              "date_modified": "2020-05-29 10:13:48",
+              "populations": "handicap accessible,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 5,
+              "available_beds": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.402718,
+                27.977415
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "DACCO \n Community Housing Solutions Center ",
+              "description": "DACCO provides temporary housing and comprehensive services to 75 residents at this location to support the goal of residents attaining permanent housing or permanent supportive housing. Basic services include food, showers, personal storage, laundry facilities and security/supervision. Services are provided on-site and/or through linkages with other community-based programs all supporting the goals of residents attaining permanent, transitional or permanent supportive housing. Individuals with a need for substance abuse treatment are linked with recovery support and other treatment services at DACCO's main campus.",
+              "address": "3630 N 50th Street, Tampa, FL 33610",
+              "city": "Tampa",
+              "zipcode": "33610",
+              "url": "www.dacco.org",
+              "phone": "8136218781",
+              "date_modified": "2020-06-17 05:55:35",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": true,
+              "total_beds": 75,
+              "available_beds": 36
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.28368,
+                27.939792
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Family Promise of Hillsborough County \n Interfaith Hospitality Network ",
+              "description": "Family Promise provides temporary housing, meals and case management to area homeless families.  There must be a minor child in custody.  Single, unaccompanied men or women are not eligible for the program.  A criminal background check is required, and a drug test is performed at the intake interview.  This is a 30-to-60 day program.  Families must be willing to work their case management plan with the ultimate goal of obtaining permanent housing.",
+              "address": "201 E Morgan Street, Brandon, FL 33510",
+              "city": "Brandon",
+              "zipcode": "33510",
+              "url": "www.familypromisebrandon.org",
+              "phone": "8136816170",
+              "date_modified": "2020-03-13 12:48:46",
+              "populations": "handicap accessible,men,women,youth,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 14,
+              "available_beds": 9
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.45957,
+                27.963418
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Metropolitan Ministries \n Miracle Place \n Hope Hall ",
+              "description": "Provides emergency shelter services for families and single women.  Provides case management, housing, employment and child care services.  Includes housing, laundry service or laundry facilities, meals or areas for meal refrigeration and preparation, clothing, transportation, furniture and household items, connection to community resources, employment services and housing access.",
+              "address": "2010 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.metromin.org",
+              "phone": "8132091000",
+              "date_modified": "2020-04-28 09:37:17",
+              "populations": "handicap accessible,women,youth,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 194,
+              "available_beds": 4
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.458716,
+                27.953108
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Love Inc \n Portico Workforce Housing",
+              "description": "Portico Workforce Housing works to transform the lives of single men struggling with homelessness in our Tampa community, in the Name of Christ, by providing an affordable housing option to single men who are actively working. Tenants are expected to contribute with chores, meet with a resource coordinator weekly, and and have a banking relationship, saving part of paycheck to go towards obtaining future traditional housing.\n\nCall our Help Center at 813-222-LOVE (5683)",
+              "address": "1001 N Florida Ave, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "https://www.loveinctampa.org/",
+              "phone": "8132225683",
+              "date_modified": "2019-10-24 12:21:47",
+              "populations": "men,",
+              "emergency": false,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 3,
+              "available_beds": 1
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459626,
+                27.963409
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Metropolitan Ministries \n Miracle Place \n Uplift Emergency Shelter",
+              "description": "All families in any of our emergency shelter programs are eligible for homeless housing supports as they seek resources for permanent housing.",
+              "address": "2002 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.metromin.org",
+              "phone": "8132091000",
+              "date_modified": "2020-04-21 13:48:51",
+              "populations": "handicap accessible,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 16,
+              "available_beds": 1
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                153.6162561,
+                -28.6502128
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Mary ",
+              "description": "A shelter for women 18 years of age and older and their children who are homeless and/or victims of domestic violence. Offers a safe haven, classes for GED, employment readiness, computer training, parenting classes, self esteem, nutrition, job search referral, help with child care, and transportation.",
+              "address": "PO Box 1251, Ruskin, FL 33575",
+              "city": "Ruskin",
+              "zipcode": "33575",
+              "url": "www.maryandmarthahouse.org",
+              "phone": "8136457874",
+              "date_modified": "2020-04-27 06:05:30",
+              "populations": "women,youth,",
+              "emergency": false,
+              "transitional": true,
+              "substance": false,
+              "total_beds": 9,
+              "available_beds": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.44351,
+                28.0781621
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Metropolitan Ministries \n Offsite Emergency Bridge Housing",
+              "description": "Metropolitan Ministries' of mission is to care for the homeless and those at risk of becoming homeless in our community through services that alleviate suffering, promote dignity and instill self-sufficiency as an expression of the ongoing ministry of Jesus Christ.  Metropolitan Ministries serves all who are in need and does not proselytize.  Following are the services MM provides:  Outreach and Prevention Services which include food, clothing and coordinated referrals to community resources; emergency housing and transitional housing with supportive services for families and single women and affordable housing with supportive services.  Supportive services include case management, employment services, housing services, counseling, child care, educational services (GED and K-5 partnership school) and overall access to community resources.",
+              "address": "1423 Lucerne Drive, Tampa, FL 33613",
+              "city": "Tampa",
+              "zipcode": "33613",
+              "url": "www.metromin.org",
+              "phone": "8132091000",
+              "date_modified": "2020-03-13 13:03:15",
+              "populations": "handicap accessible,women,youth,family,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 51,
+              "available_beds": 9
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.450673,
+                28.023817
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "New Beginnings of Tampa",
+              "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
+              "address": "905 E Juneau, Tampa, FL 33604",
+              "city": "Tampa",
+              "zipcode": "33604",
+              "url": "www.newbeginningsoftampa.com",
+              "phone": "8133742275",
+              "date_modified": "2019-10-24 12:24:28",
+              "populations": "handicap accessible,",
+              "emergency": false,
+              "transitional": true,
+              "substance": true,
+              "total_beds": 3,
+              "available_beds": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.451056,
+                28.027733
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "New Beginnings of Tampa",
+              "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
+              "address": "901 E. Seward St., Tampa, FL 33612",
+              "city": "Tampa",
+              "zipcode": "33612",
+              "url": "www.newbeginningsoftampa.com",
+              "phone": "8133742275",
+              "date_modified": "2019-10-24 12:24:39",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": true,
+              "total_beds": 10,
+              "available_beds": 2
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.444999,
+                28.045255
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "New Beginnings of Tampa",
+              "description": "Contract Bed Program - The Contract Bed program offers emergency housing to veterans to help remove them from homelessness.  Veterans will be case managed by agencies where contract beds reside.  There are three agencies in Hillsborough County that house veterans via contract beds.  These agencies are GracePoint, New Beginnings and Salvation Army.",
+              "address": "1402 E Chilkoot Avenue, Tampa, FL 33612",
+              "city": "Tampa",
+              "zipcode": "33612",
+              "url": "www.newbeginningsoftampa.com",
+              "phone": "8139716961",
+              "date_modified": "2019-10-24 12:24:50",
+              "populations": "handicap accessible,veterans,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 37,
+              "available_beds": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.444999,
+                28.045255
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "New Beginnings of Tampa",
+              "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into the community.)",
+              "address": "1402 E Chilkoot Avenue, Tampa, FL 33612",
+              "city": "Tampa",
+              "zipcode": "33612",
+              "url": "www.newbeginningsoftampa.com",
+              "phone": "8139716961",
+              "date_modified": "2019-10-24 12:25:11",
+              "populations": "handicap accessible,men,",
+              "emergency": false,
+              "transitional": true,
+              "substance": true,
+              "total_beds": 41,
+              "available_beds": 11
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.450673,
+                28.023817
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "New Beginnings of Tampa",
+              "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
+              "address": "905 E Juneau, Tampa, FL 33604",
+              "city": "Tampa",
+              "zipcode": "33604",
+              "url": "www.newbeginningsoftampa.com",
+              "phone": "8133742275",
+              "date_modified": "2019-10-24 12:25:02",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": true,
+              "total_beds": 16,
+              "available_beds": 16
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459679,
+                27.959202
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Salvation Army \n BayCare Behavioral Health Program ",
+              "description": null,
+              "address": "1514 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.salvationarmy.org",
+              "phone": "8135490641",
+              "date_modified": "2020-04-30 09:26:25",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 10,
+              "available_beds": 7
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459679,
+                27.959202
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Salvation Army \n BayCare Project ",
+              "description": null,
+              "address": "1514 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.salvationarmy.org",
+              "phone": "8135490641",
+              "date_modified": "2020-01-15 08:53:21",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 10,
+              "available_beds": 8
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459679,
+                27.959202
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Salvation Army \n Homeless Transition Program ",
+              "description": "The Salvation Army Tampa Area Command's Red Shield Lodge Emergency Shelter Homeless Transition Program provides homeless men and women (who are over the age of 18 and are not sexual offenders) with a bed, meals, daily showers, case management, referrals, and access to other services and programs with the goal of clients' becoming more stabilized and obtaining permanent housing.",
+              "address": "1514 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.salvationarmy.org",
+              "phone": "8135490641",
+              "date_modified": "2019-10-24 12:29:26",
+              "populations": "men,women,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 75,
+              "available_beds": 2
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459679,
+                27.959202
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Salvation Army \n Flex Beds ",
+              "description": "The Salvation Army Tampa Area Command's Red Shield Lodge Emergency Shelter Flex Beds provide homeless men and women (who are over the age of 18 and are not sexual offenders) with a bed, meals, daily showers, case management, referrals, and access to other services and programs with the goal of clients' becoming more stabilized and obtaining permanent housing.",
+              "address": "1514 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.salvationarmy.org",
+              "phone": "8135490641",
+              "date_modified": "2020-03-13 13:28:35",
+              "populations": "handicap accessible,men,women,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 10,
+              "available_beds": 1
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.459679,
+                27.959202
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Salvation Army \n Tampa General Project ",
+              "description": "The Recuperative Care Project's purpose is to place homeless and unfunded individual men and women who are medically ready for discharge from local hospitals into the shelter and provide shelter, meals, case management, and referrals.",
+              "address": "1514 N Florida Avenue, Tampa, FL 33602",
+              "city": "Tampa",
+              "zipcode": "33602",
+              "url": "www.salvationarmy.org",
+              "phone": "8135495323",
+              "date_modified": "2019-10-24 12:29:40",
+              "populations": "men,women,",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 10,
+              "available_beds": 9
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.445981,
+                27.960817
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Volunteers of America of Florida \n Veteran",
+              "description": "Alcoholism counseling, case/care management, clothing, drug abuse counseling education, free transit passes, holiday gits, individual counseling, job interview training, job readiness, job search/placement, job search techniques, job training formats, local automobile transportation, personal/grooming supplies, resume preparation assistance, transitional housing/shelter.",
+              "address": "1205 E. 8th Avenue Apt #116, Tampa, FL 33605",
+              "city": "Tampa",
+              "zipcode": "33605",
+              "url": "www.voa-fla.org",
+              "phone": "8133216949",
+              "date_modified": "2020-01-24 08:00:59",
+              "populations": "handicap accessible,veterans,",
+              "emergency": false,
+              "transitional": true,
+              "substance": false,
+              "total_beds": 12,
+              "available_beds": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.486376,
+                27.943069
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "Dawning Family Services \n ES \n Unincorp",
+              "description": "The maternity residence provides a 10 bed residential program for adult pregnant women.  The program provides life skills training, counseling, case management, parenting, vocational assistance, and education.",
+              "address": "201 S. Tampania Ave., Tampa, FL 33609",
+              "city": "Tampa",
+              "zipcode": "33609",
+              "url": "www.alphahouseoftampa.org",
+              "phone": "8138752024",
+              "date_modified": "2020-04-24 11:57:08",
+              "populations": "handicap accessible,women,family,pregnant",
+              "emergency": true,
+              "transitional": false,
+              "substance": false,
+              "total_beds": 18,
+              "available_beds": 16
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                -82.402718,
+                27.977415
+              ],
+              "type": "Point"
+            },
+            "properties": {
+              "title": "DACCO \n Offsite Bridge Housing ",
+              "description": "DACCO provides temporary housing and comprehensive services to 75 residents at this location to support the goal of residents attaining permanent housing or permanent supportive housing. Basic services include food, showers, personal storage, laundry facilities and security/supervision. Services are provided on-site and/or through linkages with other community-based programs all supporting the goals of residents attaining permanent, transitional or permanent supportive housing. Individuals with a need for substance abuse treatment are linked with recovery support and other treatment services at DACCO's main campus.",
+              "address": "3630 N 50th Street, Tampa, FL 33610",
+              "city": "Tampa",
+              "zipcode": "33610",
+              "url": "www.dacco.org",
+              "phone": "8136218781",
+              "date_modified": "2020-03-13 12:42:07",
+              "populations": "handicap accessible,",
+              "emergency": true,
+              "transitional": false,
+              "substance": true,
+              "total_beds": 8,
+              "available_beds": 1
+            }
           }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.45182,
-            28.010224
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "ACTS \n Emergency Bridge Shelter",
-          "description": "ACTS Bridge Housing is a 90 day 30 bed facility for homeless co-occuring male and female clients with case management and group service on site.  Also offers 8 single units for families; off site with case management.",
-          "address": "6806 N. Nebraska Ave, Tampa, FL 33604",
-          "city": "Tampa",
-          "zipcode": "33604",
-          "url": "www.actsfl.org",
-          "phone": "8132374907",
-          "date_modified": "2020-05-15 06:15:42",
-          "populations": {
-            "handicap": true,
-            "men": true,
-            "women": true,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 23,
-            "available": 3
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.402718,
-            27.977415
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "DACCO \n Offsite Bridge Housing ",
-          "description": "DACCO provides temporary housing and comprehensive services to 75 residents at this location to support the goal of residents attaining permanent housing or permanent supportive housing. Basic services include food, showers, personal storage, laundry facilities and security/supervision. Services are provided on-site and/or through linkages with other community-based programs all supporting the goals of residents attaining permanent, transitional or permanent supportive housing. Individuals with a need for substance abuse treatment are linked with recovery support and other treatment services at DACCO's main campus.",
-          "address": "3630 N 50th Street, Tampa, FL 33610",
-          "city": "Tampa",
-          "zipcode": "33610",
-          "url": "www.dacco.org",
-          "phone": "8136218781",
-          "date_modified": "2020-03-13 12:42:07",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 8,
-            "available": 1
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.402718,
-            27.977415
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "DACCO \n Community Housing Solutions Center ",
-          "description": "DACCO provides temporary housing and comprehensive services to 75 residents at this location to support the goal of residents attaining permanent housing or permanent supportive housing. Basic services include food, showers, personal storage, laundry facilities and security/supervision. Services are provided on-site and/or through linkages with other community-based programs all supporting the goals of residents attaining permanent, transitional or permanent supportive housing. Individuals with a need for substance abuse treatment are linked with recovery support and other treatment services at DACCO's main campus.",
-          "address": "3630 N 50th Street, Tampa, FL 33610",
-          "city": "Tampa",
-          "zipcode": "33610",
-          "url": "www.dacco.org",
-          "phone": "8136218781",
-          "date_modified": "2020-06-17 05:55:35",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 75,
-            "available": 36
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.408544,
-            27.968078
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "DACCO \n Columbus Transitional Housing ",
-          "description": "Womens Residential Program - In Patient",
-          "address": "4422 E Columbus Drive, Tampa, FL 33605",
-          "city": "Tampa",
-          "zipcode": "33605",
-          "url": "www.dacco.org",
-          "phone": "8133844001",
-          "date_modified": "2019-10-24 12:19:05",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 22,
-            "available": 22
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.458817,
-            28.042012
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Catholic Charities \n Mercy House ",
-          "description": "Transitional Supportive Housing Assistance for women who are HIV positive with/without children.",
-          "address": "10049 N Florida Ave, Tampa, FL 33612",
-          "city": "Tampa",
-          "zipcode": "33612",
-          "url": "www.catholiccharitiesfl.org",
-          "phone": "7278931313",
-          "date_modified": "2019-10-24 12:18:42",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": true,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 16,
-            "available": 8
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.486376,
-            27.943069
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Dawning Family Services \n ES \n City of Tampa COVID\n",
-          "description": "5 Motel/Hotel Vouchers being used as part of the response to the COVID-19 Pandemic",
-          "address": "201 S. Tampania Ave., Tampa, FL 33609",
-          "city": "Tampa",
-          "zipcode": "33609",
-          "url": "www.alphahouseoftampa.org",
-          "phone": "8138752024",
-          "date_modified": "2020-05-29 10:13:48",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 5,
-            "available": 3
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.486376,
-            27.943069
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Dawning Family Services \n ES \n Unincorp",
-          "description": "The maternity residence provides a 10 bed residential program for adult pregnant women.  The program provides life skills training, counseling, case management, parenting, vocational assistance, and education.",
-          "address": "201 S. Tampania Ave., Tampa, FL 33609",
-          "city": "Tampa",
-          "zipcode": "33609",
-          "url": "www.alphahouseoftampa.org",
-          "phone": "8138752024",
-          "date_modified": "2020-04-24 11:57:08",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": true
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 18,
-            "available": 16
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.486376,
-            27.943069
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Dawning Family Services \n ES \n COVID\n",
-          "description": "5 Motel/Hotel Vouchers being used as part of the response to the COVID-19 Pandemic",
-          "address": "201 S. Tampania Ave., Tampa, FL 33609",
-          "city": "Tampa",
-          "zipcode": "33609",
-          "url": "www.alphahouseoftampa.org",
-          "phone": "8138752024",
-          "date_modified": "2020-05-29 08:42:04",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 5,
-            "available": 4
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.28368,
-            27.939792
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Family Promise of Hillsborough County \n Interfaith Hospitality Network ",
-          "description": "Family Promise provides temporary housing, meals and case management to area homeless families.  There must be a minor child in custody.  Single, unaccompanied men or women are not eligible for the program.  A criminal background check is required, and a drug test is performed at the intake interview.  This is a 30-to-60 day program.  Families must be willing to work their case management plan with the ultimate goal of obtaining permanent housing.",
-          "address": "201 E Morgan Street, Brandon, FL 33510",
-          "city": "Brandon",
-          "zipcode": "33510",
-          "url": "www.familypromisebrandon.org",
-          "phone": "8136816170",
-          "date_modified": "2020-03-13 12:48:46",
-          "populations": {
-            "handicap": true,
-            "men": true,
-            "women": true,
-            "children": true,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 14,
-            "available": 9
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.44351,
-            28.0781621
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Metropolitan Ministries \n Offsite Emergency Bridge Housing",
-          "description": "Metropolitan Ministries' of mission is to care for the homeless and those at risk of becoming homeless in our community through services that alleviate suffering, promote dignity and instill self-sufficiency as an expression of the ongoing ministry of Jesus Christ.  Metropolitan Ministries serves all who are in need and does not proselytize.  Following are the services MM provides:  Outreach and Prevention Services which include food, clothing and coordinated referrals to community resources; emergency housing and transitional housing with supportive services for families and single women and affordable housing with supportive services.  Supportive services include case management, employment services, housing services, counseling, child care, educational services (GED and K-5 partnership school) and overall access to community resources.",
-          "address": "1423 Lucerne Drive, Tampa, FL 33613",
-          "city": "Tampa",
-          "zipcode": "33613",
-          "url": "www.metromin.org",
-          "phone": "8132091000",
-          "date_modified": "2020-03-13 13:03:15",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": true,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 51,
-            "available": 9
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.444999,
-            28.045255
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "New Beginnings of Tampa",
-          "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into the community.)",
-          "address": "1402 E Chilkoot Avenue, Tampa, FL 33612",
-          "city": "Tampa",
-          "zipcode": "33612",
-          "url": "www.newbeginningsoftampa.com",
-          "phone": "8139716961",
-          "date_modified": "2019-10-24 12:25:11",
-          "populations": {
-            "handicap": true,
-            "men": true,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 41,
-            "available": 11
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.450673,
-            28.023817
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "New Beginnings of Tampa",
-          "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
-          "address": "905 E Juneau, Tampa, FL 33604",
-          "city": "Tampa",
-          "zipcode": "33604",
-          "url": "www.newbeginningsoftampa.com",
-          "phone": "8133742275",
-          "date_modified": "2019-10-24 12:25:02",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 16,
-            "available": 16
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.486376,
-            27.943069
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Dawning Family Services \n ES ",
-          "description": "The maternity residence provides a 21 bed residential program for adult pregnant women.  The program provides life skills training, counseling, case management, parenting, vocational assistance, and education.",
-          "address": "201 S. Tampania Ave., Tampa, FL 33609",
-          "city": "Tampa",
-          "zipcode": "33609",
-          "url": "www.alphahouseoftampa.org",
-          "phone": "8138752024",
-          "date_modified": "2020-03-13 12:43:17",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": true
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 21,
-            "available": 13
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.451056,
-            28.027733
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "New Beginnings of Tampa",
-          "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
-          "address": "901 E. Seward St., Tampa, FL 33612",
-          "city": "Tampa",
-          "zipcode": "33612",
-          "url": "www.newbeginningsoftampa.com",
-          "phone": "8133742275",
-          "date_modified": "2019-10-24 12:24:39",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 10,
-            "available": 2
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.458716,
-            27.953108
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Love Inc \n Portico Workforce Housing",
-          "description": "Portico Workforce Housing works to transform the lives of single men struggling with homelessness in our Tampa community, in the Name of Christ, by providing an affordable housing option to single men who are actively working. Tenants are expected to contribute with chores, meet with a resource coordinator weekly, and and have a banking relationship, saving part of paycheck to go towards obtaining future traditional housing.\n\nCall our Help Center at 813-222-LOVE (5683)",
-          "address": "1001 N Florida Ave, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "https://www.loveinctampa.org/",
-          "phone": "8132225683",
-          "date_modified": "2019-10-24 12:21:47",
-          "populations": {
-            "handicap": false,
-            "men": true,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": false,
-            "transitional": false
-          },
-          "availability": {
-            "total": 3,
-            "available": 1
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            153.6162561,
-            -28.6502128
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Mary ",
-          "description": "A shelter for women 18 years of age and older and their children who are homeless and/or victims of domestic violence. Offers a safe haven, classes for GED, employment readiness, computer training, parenting classes, self esteem, nutrition, job search referral, help with child care, and transportation.",
-          "address": "PO Box 1251, Ruskin, FL 33575",
-          "city": "Ruskin",
-          "zipcode": "33575",
-          "url": "www.maryandmarthahouse.org",
-          "phone": "8136457874",
-          "date_modified": "2020-04-27 06:05:30",
-          "populations": {
-            "handicap": false,
-            "men": false,
-            "women": true,
-            "children": true,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": true,
-            "domestic": true,
-            "substance": false,
-            "transportation": true,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 9,
-            "available": 3
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459679,
-            27.959202
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Salvation Army \n BayCare Project ",
-          "description": null,
-          "address": "1514 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.salvationarmy.org",
-          "phone": "8135490641",
-          "date_modified": "2020-01-15 08:53:21",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 10,
-            "available": 8
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.45957,
-            27.963418
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Metropolitan Ministries \n Miracle Place \n Hope Hall ",
-          "description": "Provides emergency shelter services for families and single women.  Provides case management, housing, employment and child care services.  Includes housing, laundry service or laundry facilities, meals or areas for meal refrigeration and preparation, clothing, transportation, furniture and household items, connection to community resources, employment services and housing access.",
-          "address": "2010 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.metromin.org",
-          "phone": "8132091000",
-          "date_modified": "2020-04-28 09:37:17",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": true,
-            "children": true,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": true,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 194,
-            "available": 4
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459679,
-            27.959202
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Salvation Army \n Flex Beds ",
-          "description": "The Salvation Army Tampa Area Command's Red Shield Lodge Emergency Shelter Flex Beds provide homeless men and women (who are over the age of 18 and are not sexual offenders) with a bed, meals, daily showers, case management, referrals, and access to other services and programs with the goal of clients' becoming more stabilized and obtaining permanent housing.",
-          "address": "1514 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.salvationarmy.org",
-          "phone": "8135490641",
-          "date_modified": "2020-03-13 13:28:35",
-          "populations": {
-            "handicap": true,
-            "men": true,
-            "women": true,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 10,
-            "available": 1
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459626,
-            27.963409
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Metropolitan Ministries \n Miracle Place \n Uplift Emergency Shelter",
-          "description": "All families in any of our emergency shelter programs are eligible for homeless housing supports as they seek resources for permanent housing.",
-          "address": "2002 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.metromin.org",
-          "phone": "8132091000",
-          "date_modified": "2020-04-21 13:48:51",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": true,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 16,
-            "available": 1
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459679,
-            27.959202
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Salvation Army \n Homeless Transition Program ",
-          "description": "The Salvation Army Tampa Area Command's Red Shield Lodge Emergency Shelter Homeless Transition Program provides homeless men and women (who are over the age of 18 and are not sexual offenders) with a bed, meals, daily showers, case management, referrals, and access to other services and programs with the goal of clients' becoming more stabilized and obtaining permanent housing.",
-          "address": "1514 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.salvationarmy.org",
-          "phone": "8135490641",
-          "date_modified": "2019-10-24 12:29:26",
-          "populations": {
-            "handicap": false,
-            "men": true,
-            "women": true,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 75,
-            "available": 2
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.445981,
-            27.960817
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Volunteers of America of Florida \n Veteran",
-          "description": "Alcoholism counseling, case/care management, clothing, drug abuse counseling education, free transit passes, holiday gits, individual counseling, job interview training, job readiness, job search/placement, job search techniques, job training formats, local automobile transportation, personal/grooming supplies, resume preparation assistance, transitional housing/shelter.",
-          "address": "1205 E. 8th Avenue Apt #116, Tampa, FL 33605",
-          "city": "Tampa",
-          "zipcode": "33605",
-          "url": "www.voa-fla.org",
-          "phone": "8133216949",
-          "date_modified": "2020-01-24 08:00:59",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": true,
-            "pregnant": false
-          },
-          "services": {
-            "job": true,
-            "domestic": false,
-            "substance": false,
-            "transportation": true,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 12,
-            "available": 3
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459679,
-            27.959202
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Salvation Army \n Tampa General Project ",
-          "description": "The Recuperative Care Project's purpose is to place homeless and unfunded individual men and women who are medically ready for discharge from local hospitals into the shelter and provide shelter, meals, case management, and referrals.",
-          "address": "1514 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.salvationarmy.org",
-          "phone": "8135495323",
-          "date_modified": "2019-10-24 12:29:40",
-          "populations": {
-            "handicap": false,
-            "men": true,
-            "women": true,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 10,
-            "available": 9
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.444999,
-            28.045255
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "New Beginnings of Tampa",
-          "description": "Contract Bed Program - The Contract Bed program offers emergency housing to veterans to help remove them from homelessness.  Veterans will be case managed by agencies where contract beds reside.  There are three agencies in Hillsborough County that house veterans via contract beds.  These agencies are GracePoint, New Beginnings and Salvation Army.",
-          "address": "1402 E Chilkoot Avenue, Tampa, FL 33612",
-          "city": "Tampa",
-          "zipcode": "33612",
-          "url": "www.newbeginningsoftampa.com",
-          "phone": "8139716961",
-          "date_modified": "2019-10-24 12:24:50",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": true,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 37,
-            "available": 3
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.459679,
-            27.959202
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "Salvation Army \n BayCare Behavioral Health Program ",
-          "description": null,
-          "address": "1514 N Florida Avenue, Tampa, FL 33602",
-          "city": "Tampa",
-          "zipcode": "33602",
-          "url": "www.salvationarmy.org",
-          "phone": "8135490641",
-          "date_modified": "2020-04-30 09:26:25",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": false,
-            "transportation": false,
-            "emergency": true,
-            "transitional": false
-          },
-          "availability": {
-            "total": 10,
-            "available": 7
-          }
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "coordinates": [
-            -82.450673,
-            28.023817
-          ],
-          "type": "Point"
-        },
-        "properties": {
-          "title": "New Beginnings of Tampa",
-          "description": "Client's treatment services include:  Substance Abuse and Behavior Counseling and Case Management, One on One Support Counseling, Support Groups, Life Skills Training, Substance Abuse Education Groups and Continuing Care Support as well as Supportive Transitional Living Services (Preparing residents for re-entry into Community.)",
-          "address": "905 E Juneau, Tampa, FL 33604",
-          "city": "Tampa",
-          "zipcode": "33604",
-          "url": "www.newbeginningsoftampa.com",
-          "phone": "8133742275",
-          "date_modified": "2019-10-24 12:24:28",
-          "populations": {
-            "handicap": true,
-            "men": false,
-            "women": false,
-            "children": false,
-            "family": false,
-            "veteran": false,
-            "pregnant": false
-          },
-          "services": {
-            "job": false,
-            "domestic": false,
-            "substance": true,
-            "transportation": false,
-            "emergency": false,
-            "transitional": true
-          },
-          "availability": {
-            "total": 3,
-            "available": 3
-          }
-        }
-      }
-    ]
+        ]
   }
